@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="customer_register_success">
+		<observer instance="CarlosSoratto\ActiveCampaign\Observer\Customer\RegisterSuccess" name="carlossoratto_activecampaign_observer_customer_registersuccess_customer_register_success"/>
+	</event>
+    <event name="customer_address_save_after">
+            <observer instance="CarlosSoratto\ActiveCampaign\Observer\Customer\AfterAddressSave" name="carlossoratto_activecampaign_customer_address_after_save" />
+    </event>
+    <event name="sales_order_place_after">
+        <observer instance="CarlosSoratto\ActiveCampaign\Observer\Sales\OrderPlacedAfter" name="carlossoratto_activecampaign_order_placed_after" />
+    </event>
+    <event name="newsletter_subscriber_save_after">
+        <observer instance="CarlosSoratto\ActiveCampaign\Observer\Customer\NewsletterObserver"  name="carlossoratto_activecampaign_newsletter_enabled" />
+    </event>
+</config>

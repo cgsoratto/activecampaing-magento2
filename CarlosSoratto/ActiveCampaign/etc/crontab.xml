@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job instance="CarlosSoratto\ActiveCampaign\Cron\AbandonedCarts" method="execute" name="carlossoratto_activecampaign_cron_abandoned_carts">
+			<schedule>0 6 * * *</schedule>
+		</job>
+	</group>
+</config>
+

@@ -1,0 +1,61 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ac_tab" translate="label" sortOrder="250">
+            <label>Active Campaign</label>
+        </tab>
+        <section id="ac_settings" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>settings-separator</class>
+            <label>Settings</label>
+            <tab>ac_tab</tab>
+            <resource>CarlosSoratto_ActiveCampaign::ac_settings</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="ac_url_api" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL</label>
+                </field>
+                <field id="ac_api_token" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API TOKEN</label>
+                </field>
+            </group>
+            <group id="actions" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Actions</label>
+                <field id="btn_synccustomers" translate="label"
+                       type="CarlosSoratto\ActiveCampaign\Block\Adminhtml\Form\Field\SyncCustomers"
+                       sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Synchronize Customers</label>
+                    <comment>Update all store contacts to Active Campaign</comment>
+                </field>
+                <field id="btn_synccommercecustomers" translate="label"
+                       type="CarlosSoratto\ActiveCampaign\Block\Adminhtml\Form\Field\SyncCommerceCustomers"
+                       sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Synchronize Commerce Customers</label>
+                    <comment>Update all commerce store contacts to Active Campaign</comment>
+                </field>
+                <field id="btn_syncorders" translate="label"
+                       type="CarlosSoratto\ActiveCampaign\Block\Adminhtml\Form\Field\SyncOrders"
+                       sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Synchronize Orders</label>
+                    <comment>Update all store orders to Active Campaign</comment>
+                </field>
+                <field id="btn_syncabandonedcarts" translate="label"
+                       type="CarlosSoratto\ActiveCampaign\Block\Adminhtml\Form\Field\SyncAbandonedCarts"
+                       sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Synchronize Abandoned Carts</label>
+                    <comment>Upgrade all abandoned carts from the store to Active Campaign</comment>
+                </field>
+                <field id="btn_addlistac" translate="label"
+                       type="CarlosSoratto\ActiveCampaign\Block\Adminhtml\Form\Field\AddListAc"
+                       sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Synchronize List</label>
+                    <comment>Synchronize all contacts with the Lista</comment>
+                </field>
+                <field id="btn_syncnews" translate="label"
+                       type="CarlosSoratto\ActiveCampaign\Block\Adminhtml\Form\Field\SyncNews"
+                       sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sync Subscribers in Newsletter</label>
+                    <comment>Sync all store contacts with newsletter enabled</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
