@@ -1,11 +1,12 @@
-# activecampaing-magento2
-Module Active Campaing for Magento 2.
+# Module Active Campaing for Magento 2.
 
 This module is used to connect Active Campaing with your Magento 2 store.
 
 You need to create an ActiveCampaing account (sandbox is also accepted).
 
-Feature:
+I accept improvements! Make a pull request!
+
+## Feature:
 
 Add contact (customer) + commerce contact (with address and phone).
 
@@ -15,7 +16,7 @@ Add abandoned cart.
 
 Add newsletter (acceptsMarketing)
 
-Bonus:
+## Bonus:
 
 Sync all store contacts to Active Campaign.
 
@@ -28,5 +29,4 @@ Sync all abandoned carts from the store to Active Campaign.
 Synchronize all contacts with a List.
 
 Synchronize all store contacts with newsletter enabled.
-
-I accept improvements! Make a pull request!
+ 
